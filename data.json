@@ -125,6 +125,16 @@
       "date": "2026-11-09",
       "done": false,
       "createdAt": "2026-11-06T16:30:45.182Z"
+    },
+    {
+      "id": "3794d00d-5650-4acd-a851-f36a68cc993e",
+      "title": "Course EF",
+      "category": "course",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-10",
+      "done": false,
+      "createdAt": "2026-11-06T16:32:45.643Z"
     }
   ],
   "skipped": [],
