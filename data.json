@@ -1,6 +1,62 @@
 {
   "version": 1,
-  "items": [],
+  "items": [
+    {
+      "id": "2026-11-06|etirements",
+      "planKey": "2026-11-06|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-06",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-06"
+    },
+    {
+      "id": "2026-11-07|etirements",
+      "planKey": "2026-11-07|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-07",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-07"
+    },
+    {
+      "id": "2026-11-08|etirements",
+      "planKey": "2026-11-08|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-08",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-08"
+    },
+    {
+      "id": "2026-11-09|etirements",
+      "planKey": "2026-11-09|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-09",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-09"
+    },
+    {
+      "id": "2026-11-10|etirements",
+      "planKey": "2026-11-10|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-10",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-10"
+    }
+  ],
   "skipped": [],
   "daily": [
     {
