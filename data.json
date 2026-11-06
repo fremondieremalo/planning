@@ -145,6 +145,27 @@
       "date": "2026-11-11",
       "done": false,
       "createdAt": "2026-11-06T16:36:53.683Z"
+    },
+    {
+      "id": "2026-11-11|etirements",
+      "planKey": "2026-11-11|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-11",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-11"
+    },
+    {
+      "id": "6ba66f5a-4f3d-4fe5-a90c-2698f6dcfb58",
+      "title": "Eval Traitement Image",
+      "category": "ecole",
+      "importance": "faible",
+      "description": "",
+      "date": "2026-12-03",
+      "done": false,
+      "createdAt": "2026-11-06T23:16:00.699Z"
     }
   ],
   "skipped": [],
