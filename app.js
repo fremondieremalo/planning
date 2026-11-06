@@ -2,8 +2,8 @@
    Planning : configuration (à renseigner une seule fois)
    ===================================================================== */
 const CONFIG = {
-  owner: "fremondieremalo", // ton identifiant GitHub
-  repo: "planning", // le dépôt qui contient ce site
+  owner: "TON_PSEUDO_GITHUB", // ton identifiant GitHub
+  repo: "TON_DEPOT", // le dépôt qui contient ce site
   branch: "main",
   file: "data.json",
 };
@@ -17,6 +17,21 @@ const CATEGORIES = {
 };
 const CAT_ORDER = Object.keys(CATEGORIES);
 const IMPORTANCE = { faible: "faible", moyenne: "moyenne", extreme: "extrême" };
+
+/* Séances de muscu préenregistrées (proposées quand la catégorie est « Muscu ») */
+const SEANCES_MUSCU = [
+  {
+    id: "upper",
+    title: "Séance Upper",
+    description:
+      "Développé couché\nBi-set : rowing + tirage bûcheron\nBi-set : développé militaire + élévations latérales\nBi-set : curl pupitre + curl brachial\nBi-set : dips + lever altéré",
+  },
+  {
+    id: "lower",
+    title: "Séance Lower",
+    description: "Squat\nRDL\nFentes bulgares\nRenfo mollets (pour la course)",
+  },
+];
 const DAYS_AHEAD = 4; // aujourd'hui + 4 jours
 const TOKEN_KEY = "planning.token";
 const CACHE_KEY = "planning.cache";
@@ -202,7 +217,13 @@ async function pushRemote() {
 
 /* ---------- Planning type : génère les vignettes des 5 jours affichés ---------- */
 function ensurePlanItems() {
-  const { items, skipped, byWeekday, daily } = state.data;
+  const { byWeekday, daily } = state.data;
+
+  // Retire les vignettes automatiques dont l'activité n'est plus dans le planning type
+  const planIds = new Set([...daily, ...Object.values(byWeekday).flat()].map((e) => e.id));
+  state.data.items = state.data.items.filter((it) => !it.planKey || planIds.has(it.planKey.split("|")[1]));
+
+  const { items, skipped } = state.data;
   const known = new Set(items.map((it) => it.planKey).filter(Boolean));
   const skip = new Set(skipped);
 
@@ -332,8 +353,21 @@ $("#board").addEventListener("click", (e) => {
 });
 
 /* ---------- Fenêtre ajouter / détails ---------- */
-function syncImportanceField() {
-  $("#f-importance-wrap").hidden = $("#f-category").value !== "ecole";
+/* Affiche les champs propres à la catégorie choisie */
+function syncFormFields() {
+  const cat = $("#f-category").value;
+  const isMuscu = cat === "muscu";
+  $("#f-importance-wrap").hidden = cat !== "ecole";
+  $("#f-seance-wrap").hidden = !isMuscu;
+  $("#f-seance").required = isMuscu; // obligatoire seulement quand le champ est visible
+}
+
+/* Séance préenregistrée : remplit le nom et la description (modifiables ensuite) */
+function applySeance() {
+  const seance = SEANCES_MUSCU.find((s) => s.id === $("#f-seance").value);
+  if (!seance) return;
+  $("#f-title").value = seance.title;
+  $("#f-description").value = seance.description;
 }
 
 function openEditor(id = null) {
@@ -347,12 +381,28 @@ function openEditor(id = null) {
   $("#f-description").value = it?.description ?? "";
   $("#f-date").value = it?.date ?? dateKey(today());
   $("#f-delete").hidden = !it;
-  syncImportanceField();
+
+  // Séance muscu : on retrouve la séance préenregistrée, sinon on garde une option « Personnalisée »
+  const seance = it?.category === "muscu" ? SEANCES_MUSCU.find((s) => s.title === it.title) : null;
+  $("#f-seance").querySelector("[data-custom]")?.remove();
+  if (it?.category === "muscu" && !seance) {
+    $("#f-seance").insertAdjacentHTML("beforeend", '<option value="custom" data-custom>Personnalisée</option>');
+  }
+  $("#f-seance").value = seance?.id ?? (it?.category === "muscu" ? "custom" : "");
+
+  syncFormFields();
   $("#item-dialog").showModal();
 }
 
 $("#add-btn").addEventListener("click", () => openEditor());
-$("#f-category").addEventListener("change", syncImportanceField);
+$("#f-category").addEventListener("change", syncFormFields);
+$("#f-seance").addEventListener("change", applySeance);
+
+// Remplit la liste des séances de muscu à partir de SEANCES_MUSCU
+$("#f-seance").insertAdjacentHTML(
+  "beforeend",
+  SEANCES_MUSCU.map((s) => `<option value="${s.id}">${esc(s.title)}</option>`).join("")
+);
 
 $("#item-form").addEventListener("submit", (e) => {
   e.preventDefault();

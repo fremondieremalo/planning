@@ -10,49 +10,5 @@
       "description": ""
     }
   ],
-  "byWeekday": {
-    "0": [
-      { "id": "course-longue", "title": "Course longue", "category": "course", "description": "" }
-    ],
-    "1": [
-      { "id": "course", "title": "Course", "category": "course", "description": "" }
-    ],
-    "2": [
-      {
-        "id": "muscu-upper",
-        "title": "Muscu upper",
-        "category": "muscu",
-        "description": "Développé couché\nBi-set : rowing + tirage bûcheron\nBi-set : développé militaire + élévations latérales\nBi-set : curl pupitre + curl brachial\nBi-set : dips + lever altéré"
-      }
-    ],
-    "3": [
-      { "id": "course", "title": "Course", "category": "course", "description": "" }
-    ],
-    "4": [
-      { "id": "course", "title": "Course", "category": "course", "description": "" },
-      {
-        "id": "muscu-upper",
-        "title": "Muscu upper",
-        "category": "muscu",
-        "description": "Développé couché\nBi-set : rowing + tirage bûcheron\nBi-set : développé militaire + élévations latérales\nBi-set : curl bras arrière + curl brachial\nBi-set : dips + lever altéré"
-      }
-    ],
-    "5": [
-      {
-        "id": "muscu-lower",
-        "title": "Muscu lower",
-        "category": "muscu",
-        "description": "Squat\nRDL\nFentes bulgares\nRenfo mollets (pour la course)"
-      }
-    ],
-    "6": [
-      { "id": "course", "title": "Course", "category": "course", "description": "" },
-      {
-        "id": "muscu-upper",
-        "title": "Muscu upper",
-        "category": "muscu",
-        "description": "Développé couché\nBi-set : rowing + tirage bûcheron\nBi-set : développé militaire + élévations latérales\nBi-set : curl pupitre + curl brachial\nBi-set : dips + lever altéré"
-      }
-    ]
-  }
+  "byWeekday": {}
 }
