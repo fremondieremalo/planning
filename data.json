@@ -115,6 +115,16 @@
       "date": "2026-11-08",
       "done": false,
       "createdAt": "2026-11-06T16:30:29.945Z"
+    },
+    {
+      "id": "31a92178-3fbd-4fc5-915d-3bf3e26c4ead",
+      "title": "Séance Lower",
+      "category": "muscu",
+      "importance": null,
+      "description": "Squat\nRDL\nFentes bulgares\nRenfo mollets (pour la course)",
+      "date": "2026-11-09",
+      "done": false,
+      "createdAt": "2026-11-06T16:30:45.182Z"
     }
   ],
   "skipped": [],
