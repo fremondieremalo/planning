@@ -2,8 +2,8 @@
    Planning : configuration (à renseigner une seule fois)
    ===================================================================== */
 const CONFIG = {
-  owner: "TON_PSEUDO_GITHUB", // ton identifiant GitHub
-  repo: "TON_DEPOT", // le dépôt qui contient ce site
+  owner: "fremondieremalo", // ton identifiant GitHub
+  repo: "planning", // le dépôt qui contient ce site
   branch: "main",
   file: "data.json",
 };
