@@ -1,0 +1,541 @@
+/* ==========================================================================
+   Planning : couleurs, typo et composants
+   Les couleurs des catégories sont ici : modifie-les au besoin.
+   ========================================================================== */
+:root {
+  --paper: #E5E4DF;
+  --paper-2: #F4F3EF;
+  --ink: #1F1A17;
+
+  --muscu: #FF3D1F;
+  --course: #19C46B;
+  --etirements: #FFB800;
+  --ecole: #2F4BFF;
+  --autres: #FF4FA3;
+
+  --done: #CFCEC8;
+  --done-ink: #6E6C67;
+
+  --radius: 16px;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Bricolage Grotesque", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 3px solid var(--ecole);
+  outline-offset: 3px;
+}
+
+/* ---------- Barre du haut ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: calc(18px + env(safe-area-inset-top, 0px)) clamp(16px, 4vw, 40px) 18px;
+  background: var(--paper);
+  border-bottom: 2px solid var(--ink);
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.sync {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.sync::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--done-ink);
+}
+
+.sync[data-state="ok"]::before { background: var(--course); }
+.sync[data-state="saving"]::before { background: var(--etirements); }
+.sync[data-state="error"]::before,
+.sync[data-state="conflict"]::before { background: var(--muscu); }
+
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--paper-2);
+  font-size: 1.1rem;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.add-btn {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 3px 3px 0 var(--muscu);
+  transition: transform 120ms ease-out, box-shadow 120ms ease-out;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.add-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 var(--muscu);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .add-btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 0 var(--muscu);
+  }
+}
+
+/* ---------- Tableau : aujourd'hui + 4 jours ---------- */
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 24px);
+  padding: 24px clamp(16px, 4vw, 40px) calc(60px + env(safe-area-inset-bottom, 0px));
+}
+
+@media (max-width: 900px) {
+  .board {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.day-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--ink);
+}
+
+.day-name {
+  display: inline-block;
+  margin: 0;
+  padding: 2px 6px;
+  margin-left: -6px;
+  border-radius: 8px;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.day-date {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.is-today .day-name {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.day-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.empty {
+  margin: 4px 0 0;
+  font-size: 0.92rem;
+  opacity: 0.6;
+}
+
+/* ---------- Vignettes ---------- */
+.card {
+  --c: var(--paper-2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--c);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 160ms ease-out, box-shadow 160ms ease-out, background-color 200ms, color 200ms;
+}
+
+.card[data-cat="muscu"] { --c: var(--muscu); }
+.card[data-cat="course"] { --c: var(--course); }
+.card[data-cat="etirements"] { --c: var(--etirements); }
+.card[data-cat="ecole"] { --c: var(--ecole); color: #fff; }
+.card[data-cat="autres"] { --c: var(--autres); }
+
+@media (hover: hover) and (pointer: fine) {
+  .card:not(.is-done):hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 var(--ink);
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  padding: 14px 14px 10px;
+  border: 0;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.card-cat {
+  align-self: flex-start;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.card-title {
+  margin: 2px 0 0;
+  font-size: 1.12rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+
+.card-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  white-space: pre-line;
+  opacity: 0.9;
+}
+
+.card-foot {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px 10px;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 4px 14px 4px 6px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.box {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 7px;
+  background: var(--paper-2);
+}
+
+.check[aria-pressed="true"] .box {
+  background: var(--ink);
+}
+
+.check[aria-pressed="true"] .box::after {
+  content: "✓";
+  color: var(--paper);
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Vignette « fait » : gris clair, texte barré */
+.card.is-done {
+  background: var(--done);
+  color: var(--done-ink);
+  border-color: var(--done-ink);
+  box-shadow: 3px 3px 0 var(--done-ink);
+}
+
+.card.is-done .card-cat {
+  background: var(--done-ink);
+  color: var(--done);
+}
+
+.card.is-done .card-title {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.card.is-done .check {
+  border-color: var(--done-ink);
+  color: var(--done-ink);
+  background: var(--done);
+}
+
+.card.is-done .box,
+.card.is-done .check[aria-pressed="true"] .box {
+  border-color: var(--done-ink);
+  background: var(--done-ink);
+}
+
+/* ---------- Rappels d'examens (en bas, en petit) ---------- */
+.reminders {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 8px;
+}
+
+.reminder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 10px;
+  border: 1.5px dashed var(--ink);
+  border-radius: 10px;
+  background: transparent;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: left;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.reminder-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reminder-when {
+  flex-shrink: 0;
+  font-weight: 800;
+}
+
+.reminder.is-done {
+  opacity: 0.55;
+  text-decoration: line-through;
+}
+
+/* ---------- Boîtes de dialogue ---------- */
+.dialog {
+  width: min(92vw, 480px);
+  max-height: 90dvh;
+  overflow: auto;
+  padding: 0;
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.dialog::backdrop {
+  background: rgba(31, 26, 23, 0.45);
+}
+
+.dialog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 18px 0 22px;
+}
+
+.dialog h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+  padding: 16px 22px 22px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.optional {
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  background: var(--paper-2);
+  font-size: 16px; /* 16px minimum : sinon iOS zoome sur le champ */
+  font-weight: 500;
+}
+
+.form textarea {
+  min-height: 96px;
+  resize: vertical;
+  line-height: 1.4;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 0.98rem;
+  font-weight: 700;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.btn.primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn.danger {
+  background: var(--muscu);
+  color: var(--ink);
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}

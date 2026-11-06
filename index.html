@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#E5E4DF" />
+  <meta name="color-scheme" content="light" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Planning" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%23FF3D1F' stroke='%231F1A17' stroke-width='8'/%3E%3C/svg%3E" />
+  <title>Planning</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Planning</h1>
+      <p id="today-label" class="subtitle"></p>
+    </div>
+    <div class="actions">
+      <span id="sync" class="sync" data-state="local">Chargement…</span>
+      <button id="settings-btn" class="icon-btn" type="button" aria-label="Réglages">⚙</button>
+      <button id="add-btn" class="add-btn" type="button">+ Ajouter</button>
+    </div>
+  </header>
+
+  <main id="board" class="board"></main>
+
+  <dialog id="item-dialog" class="dialog" aria-labelledby="item-title">
+    <form id="item-form" class="form">
+      <div class="dialog-head">
+        <h2 id="item-title">Nouvelle vignette</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Fermer">✕</button>
+      </div>
+
+      <label>Nom
+        <input id="f-title" required maxlength="80" placeholder="Ex. Course 10 km" />
+      </label>
+
+      <label>Catégorie
+        <select id="f-category">
+          <option value="muscu">Muscu</option>
+          <option value="course">Course</option>
+          <option value="etirements">Étirements</option>
+          <option value="ecole">École</option>
+          <option value="autres">Autres tâches</option>
+        </select>
+      </label>
+
+      <label id="f-importance-wrap" hidden>Importance
+        <select id="f-importance">
+          <option value="faible">Faible : le jour J seulement</option>
+          <option value="moyenne">Moyenne : J, J-1 et J-2</option>
+          <option value="extreme">Extrême : J, J-1 et J-2, plus un rappel en bas des jours jusqu'à J</option>
+        </select>
+      </label>
+
+      <label>Date
+        <input id="f-date" type="date" required />
+      </label>
+
+      <label>Description <span class="optional">facultatif</span>
+        <textarea id="f-description" rows="3"></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="button" id="f-delete" class="btn danger" hidden>Supprimer</button>
+        <span class="spacer"></span>
+        <button type="button" class="btn ghost" data-close>Annuler</button>
+        <button type="submit" id="f-submit" class="btn primary">Ajouter</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="settings-dialog" class="dialog" aria-labelledby="settings-title">
+    <form id="settings-form" class="form">
+      <div class="dialog-head">
+        <h2 id="settings-title">Réglages</h2>
+        <button type="button" class="icon-btn" data-close aria-label="Fermer">✕</button>
+      </div>
+
+      <p class="hint">Pour retrouver le planning sur ton téléphone et ton ordinateur, colle ici un token GitHub créé avec la permission « Contents : lecture et écriture » sur ce seul dépôt.</p>
+
+      <label>Token GitHub
+        <input id="s-token" type="password" autocomplete="off" spellcheck="false" />
+      </label>
+      <p id="s-repo" class="hint"></p>
+
+      <div class="form-actions">
+        <button type="button" id="s-forget" class="btn danger">Oublier le token</button>
+        <span class="spacer"></span>
+        <button type="button" id="s-export" class="btn ghost">Exporter</button>
+        <button type="button" id="s-sync" class="btn ghost">Recharger</button>
+        <button type="submit" class="btn primary">Enregistrer</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
