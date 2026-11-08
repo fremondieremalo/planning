@@ -197,6 +197,16 @@
       "date": "2026-11-09",
       "done": false,
       "createdAt": "2026-11-08T11:55:24.521Z"
+    },
+    {
+      "id": "a72fbf36-873c-4f1b-b7ac-5676cad18312",
+      "title": "v2",
+      "category": "etirements",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-08",
+      "done": false,
+      "createdAt": "2026-11-08T16:53:03.044Z"
     }
   ],
   "skipped": [],
