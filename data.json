@@ -73,7 +73,7 @@
       "importance": null,
       "description": "",
       "date": "2026-11-08",
-      "done": false,
+      "done": true,
       "createdAt": "2026-11-06T15:54:13.734Z"
     },
     {
@@ -186,6 +186,17 @@
       "date": "2026-11-08",
       "done": false,
       "createdAt": "2026-11-06T23:17:48.352Z"
+    },
+    {
+      "id": "2026-11-12|etirements",
+      "planKey": "2026-11-12|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-12",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-12"
     }
   ],
   "skipped": [],
