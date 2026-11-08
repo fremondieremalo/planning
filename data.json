@@ -67,16 +67,6 @@
       "createdAt": "2026-11-06T15:53:45.220Z"
     },
     {
-      "id": "bcc0e9f7-39aa-4aa9-abf5-963f4196a560",
-      "title": "Course avec Savin",
-      "category": "course",
-      "importance": null,
-      "description": "",
-      "date": "2026-11-08",
-      "done": false,
-      "createdAt": "2026-11-06T15:54:13.734Z"
-    },
-    {
       "id": "ab4dbc0d-e65c-44df-beef-fc64ca7eebd1",
       "title": "Projet Android",
       "category": "ecole",
