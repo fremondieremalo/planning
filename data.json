@@ -187,6 +187,16 @@
       "importance": null,
       "done": false,
       "createdAt": "2026-11-12"
+    },
+    {
+      "id": "4744d41d-0b0a-49b9-9fb4-d6ce65ebf209",
+      "title": "Piste",
+      "category": "course",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-12",
+      "done": false,
+      "createdAt": "2026-11-08T11:55:05.985Z"
     }
   ],
   "skipped": [],
