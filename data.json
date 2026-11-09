@@ -207,6 +207,27 @@
       "date": "2026-11-08",
       "done": false,
       "createdAt": "2026-11-08T16:53:03.044Z"
+    },
+    {
+      "id": "2026-11-13|etirements",
+      "planKey": "2026-11-13|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-13",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-13"
+    },
+    {
+      "id": "cf06647c-06c4-40d5-92bb-91d1a6db1557",
+      "title": "Courses",
+      "category": "autres",
+      "importance": null,
+      "description": "Pommes, Clémentines, Farine, Carottes, Oeufs",
+      "date": "2026-11-09",
+      "done": false,
+      "createdAt": "2026-11-09T12:19:03.797Z"
     }
   ],
   "skipped": [],
