@@ -240,16 +240,6 @@
       "createdAt": "2026-11-10T07:37:07.751Z"
     },
     {
-      "id": "e058fba8-d215-4e2c-a983-fff1aec169ea",
-      "title": "Activ'ESAIP",
-      "category": "ecole",
-      "importance": "faible",
-      "description": "Envoyer quelques candidatures",
-      "date": "2026-11-10",
-      "done": false,
-      "createdAt": "2026-11-10T07:37:27.940Z"
-    },
-    {
       "id": "6b2e3bd6-4805-4910-b02c-2dca6f00f420",
       "title": "TP GitHub",
       "category": "ecole",
