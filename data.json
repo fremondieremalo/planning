@@ -238,6 +238,16 @@
       "date": "2026-11-10",
       "done": false,
       "createdAt": "2026-11-10T07:37:07.751Z"
+    },
+    {
+      "id": "e058fba8-d215-4e2c-a983-fff1aec169ea",
+      "title": "Activ'ESAIP",
+      "category": "ecole",
+      "importance": "faible",
+      "description": "Envoyer quelques candidatures",
+      "date": "2026-11-10",
+      "done": false,
+      "createdAt": "2026-11-10T07:37:27.940Z"
     }
   ],
   "skipped": [],
