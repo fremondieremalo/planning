@@ -2,17 +2,6 @@
   "version": 1,
   "items": [
     {
-      "id": "2026-11-06|etirements",
-      "planKey": "2026-11-06|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-06",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-06"
-    },
-    {
       "id": "2026-11-07|etirements",
       "planKey": "2026-11-07|etirements",
       "title": "Étirements",
@@ -228,6 +217,27 @@
       "date": "2026-11-09",
       "done": false,
       "createdAt": "2026-11-09T12:19:03.797Z"
+    },
+    {
+      "id": "2026-11-14|etirements",
+      "planKey": "2026-11-14|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-14",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-14"
+    },
+    {
+      "id": "87a99f7f-bf9e-4ef9-a136-41a8f9efb76c",
+      "title": "PSIR",
+      "category": "ecole",
+      "importance": "faible",
+      "description": "Ajouter skills a gemini puis demander de chercher des articles",
+      "date": "2026-11-10",
+      "done": false,
+      "createdAt": "2026-11-10T07:37:07.751Z"
     }
   ],
   "skipped": [],
