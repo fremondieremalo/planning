@@ -2,17 +2,6 @@
   "version": 1,
   "items": [
     {
-      "id": "2026-11-07|etirements",
-      "planKey": "2026-11-07|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-07",
-      "importance": null,
-      "done": true,
-      "createdAt": "2026-11-07"
-    },
-    {
       "id": "2026-11-08|etirements",
       "planKey": "2026-11-08|etirements",
       "title": "Étirements",
@@ -248,6 +237,27 @@
       "date": "2026-11-10",
       "done": false,
       "createdAt": "2026-11-10T08:48:19.836Z"
+    },
+    {
+      "id": "2026-11-15|etirements",
+      "planKey": "2026-11-15|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-15",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-15"
+    },
+    {
+      "id": "ec69fbfc-5e9a-4d88-beb8-b74243912882",
+      "title": "Ménage",
+      "category": "autres",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-11",
+      "done": false,
+      "createdAt": "2026-11-11T09:00:50.907Z"
     }
   ],
   "skipped": [],
