@@ -49,7 +49,7 @@
       "title": "Projet Android",
       "category": "ecole",
       "importance": "extreme",
-      "description": "",
+      "description": "Modif : \ndans drawable : rouge, vert, jaune\nactivity_questionnaire.xml, questionnaire.java\nactivity_accueil, accueil.java",
       "date": "2026-12-02",
       "done": false,
       "createdAt": "2026-11-06T16:28:58.229Z"
