@@ -2,17 +2,6 @@
   "version": 1,
   "items": [
     {
-      "id": "2026-11-09|etirements",
-      "planKey": "2026-11-09|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-09",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-09"
-    },
-    {
       "id": "2026-11-10|etirements",
       "planKey": "2026-11-10|etirements",
       "title": "Étirements",
@@ -278,6 +267,27 @@
       "date": "2026-11-12",
       "done": false,
       "createdAt": "2026-11-12T06:54:29.944Z"
+    },
+    {
+      "id": "2026-11-17|etirements",
+      "planKey": "2026-11-17|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-17",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-17"
+    },
+    {
+      "id": "84614b1a-de96-458e-9ca5-27e8482f2dc2",
+      "title": "EF + 2x10' à 4'20",
+      "category": "course",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-15",
+      "done": false,
+      "createdAt": "2026-11-13T08:57:13.969Z"
     }
   ],
   "skipped": [],
