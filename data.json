@@ -328,6 +328,16 @@
       "date": "2026-11-17",
       "done": false,
       "createdAt": "2026-11-13T09:27:54.862Z"
+    },
+    {
+      "id": "8e1d541a-ad4a-4db3-8f03-188cd6a13c4a",
+      "title": "3x2000m 3'57-3'58",
+      "category": "course",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-13",
+      "done": false,
+      "createdAt": "2026-11-13T09:28:27.992Z"
     }
   ],
   "skipped": [],
