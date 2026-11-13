@@ -318,6 +318,16 @@
       "date": "2026-11-23",
       "done": false,
       "createdAt": "2026-11-13T09:27:24.813Z"
+    },
+    {
+      "id": "e8b6d6c4-4fe2-4162-ac84-8d3e6b8ef633",
+      "title": "EF 50min",
+      "category": "course",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-17",
+      "done": false,
+      "createdAt": "2026-11-13T09:27:54.862Z"
     }
   ],
   "skipped": [],
