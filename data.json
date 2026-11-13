@@ -298,6 +298,16 @@
       "date": "2026-11-16",
       "done": false,
       "createdAt": "2026-11-13T09:27:04.339Z"
+    },
+    {
+      "id": "987bc871-3620-4996-ae4e-94447aeab046",
+      "title": "Séance Upper",
+      "category": "muscu",
+      "importance": null,
+      "description": "Développé couché\nBi-set : rowing + tirage bûcheron\nBi-set : développé militaire + élévations latérales\nBi-set : curl pupitre + curl brachial\nBi-set : dips + lever altéré",
+      "date": "2026-11-20",
+      "done": false,
+      "createdAt": "2026-11-13T09:27:14.220Z"
     }
   ],
   "skipped": [],
