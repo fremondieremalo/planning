@@ -368,6 +368,16 @@
       "date": "2026-11-26",
       "done": false,
       "createdAt": "2026-11-13T09:29:37.245Z"
+    },
+    {
+      "id": "84b2b343-8667-4d9e-8aa1-3a522bef531b",
+      "title": "À penser",
+      "category": "autres",
+      "importance": null,
+      "description": "Savon vaisselle\nAltères + attaches + poids",
+      "date": "2026-11-13",
+      "done": false,
+      "createdAt": "2026-11-13T11:56:06.551Z"
     }
   ],
   "skipped": [],
