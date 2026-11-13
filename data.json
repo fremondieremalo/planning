@@ -358,6 +358,16 @@
       "date": "2026-11-24",
       "done": false,
       "createdAt": "2026-11-13T09:29:09.872Z"
+    },
+    {
+      "id": "51e8d34f-7fd0-49a3-b00f-a97ff81610e2",
+      "title": "4x500m 3'56",
+      "category": "course",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-26",
+      "done": false,
+      "createdAt": "2026-11-13T09:29:37.245Z"
     }
   ],
   "skipped": [],
