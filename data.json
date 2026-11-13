@@ -408,6 +408,16 @@
       "date": "2026-11-15",
       "done": false,
       "createdAt": "2026-11-13T15:44:14.350Z"
+    },
+    {
+      "id": "2ac1fcc6-7560-466f-ad38-fb01d8e45cc4",
+      "title": "Portfolio",
+      "category": "ecole",
+      "importance": "faible",
+      "description": "",
+      "date": "2026-11-15",
+      "done": false,
+      "createdAt": "2026-11-13T15:45:11.612Z"
     }
   ],
   "skipped": [],
