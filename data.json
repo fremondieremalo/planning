@@ -338,6 +338,16 @@
       "date": "2026-11-19",
       "done": false,
       "createdAt": "2026-11-13T09:28:27.992Z"
+    },
+    {
+      "id": "40f6d6c8-186c-4d82-b671-86e6493c8208",
+      "title": "EF 1h",
+      "category": "course",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-22",
+      "done": false,
+      "createdAt": "2026-11-13T09:28:51.094Z"
     }
   ],
   "skipped": [],
