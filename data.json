@@ -132,17 +132,6 @@
       "createdAt": "2026-11-08T16:53:03.044Z"
     },
     {
-      "id": "2026-11-13|etirements",
-      "planKey": "2026-11-13|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-13",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-13"
-    },
-    {
       "id": "cf06647c-06c4-40d5-92bb-91d1a6db1557",
       "title": "Courses",
       "category": "autres",
@@ -428,6 +417,27 @@
       "date": "2026-11-26",
       "done": false,
       "createdAt": "2026-11-16T10:45:59.949Z"
+    },
+    {
+      "id": "2026-11-21|etirements",
+      "planKey": "2026-11-21|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-21",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-21"
+    },
+    {
+      "id": "a061cfa8-11ca-4c1c-9579-c37dd8249306",
+      "title": "Oral Deep Learning",
+      "category": "ecole",
+      "importance": "moyenne",
+      "description": "",
+      "date": "2026-12-11",
+      "done": false,
+      "createdAt": "2026-11-17T12:44:53.214Z"
     }
   ],
   "skipped": [],
