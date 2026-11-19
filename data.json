@@ -478,6 +478,16 @@
       "date": "2026-11-21",
       "done": false,
       "createdAt": "2026-11-19T13:26:30.670Z"
+    },
+    {
+      "id": "d055763e-2047-49d7-9296-73c3eb0471a9",
+      "title": "Finir TP2 et TP1 Deep Learning",
+      "category": "ecole",
+      "importance": "faible",
+      "description": "",
+      "date": "2026-11-21",
+      "done": false,
+      "createdAt": "2026-11-19T14:34:38.973Z"
     }
   ],
   "skipped": [],
