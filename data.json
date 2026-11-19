@@ -142,17 +142,6 @@
       "createdAt": "2026-11-09T12:19:03.797Z"
     },
     {
-      "id": "2026-11-14|etirements",
-      "planKey": "2026-11-14|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-14",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-14"
-    },
-    {
       "id": "87a99f7f-bf9e-4ef9-a136-41a8f9efb76c",
       "title": "PSIR",
       "category": "ecole",
@@ -171,17 +160,6 @@
       "date": "2026-11-10",
       "done": false,
       "createdAt": "2026-11-10T08:48:19.836Z"
-    },
-    {
-      "id": "2026-11-15|etirements",
-      "planKey": "2026-11-15|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-15",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-15"
     },
     {
       "id": "ec69fbfc-5e9a-4d88-beb8-b74243912882",
@@ -254,16 +232,6 @@
       "date": "2026-11-16",
       "done": false,
       "createdAt": "2026-11-13T09:27:04.339Z"
-    },
-    {
-      "id": "987bc871-3620-4996-ae4e-94447aeab046",
-      "title": "Séance Upper",
-      "category": "muscu",
-      "importance": null,
-      "description": "Développé couché\nBi-set : rowing + tirage bûcheron\nBi-set : développé militaire + élévations latérales\nBi-set : curl pupitre + curl brachial\nBi-set : dips + lever altéré",
-      "date": "2026-11-20",
-      "done": false,
-      "createdAt": "2026-11-13T09:27:14.220Z"
     },
     {
       "id": "c77b5203-ead0-474f-8c04-86d5c4846c77",
@@ -438,6 +406,28 @@
       "date": "2026-12-11",
       "done": false,
       "createdAt": "2026-11-17T12:44:53.214Z"
+    },
+    {
+      "id": "2026-11-22|etirements",
+      "planKey": "2026-11-22|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-22",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-22"
+    },
+    {
+      "id": "2026-11-23|etirements",
+      "planKey": "2026-11-23|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-23",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-23"
     }
   ],
   "skipped": [],
