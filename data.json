@@ -438,6 +438,16 @@
       "date": "2026-11-19",
       "done": false,
       "createdAt": "2026-11-19T13:19:42.187Z"
+    },
+    {
+      "id": "2ce68901-d357-4da2-a803-642c2508167c",
+      "title": "LDLC",
+      "category": "autres",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-19",
+      "done": false,
+      "createdAt": "2026-11-19T13:24:19.229Z"
     }
   ],
   "skipped": [],
