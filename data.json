@@ -418,6 +418,16 @@
       "importance": null,
       "done": false,
       "createdAt": "2026-11-23"
+    },
+    {
+      "id": "ca295cac-45b3-4b1a-8511-3ad5452055e1",
+      "title": "50min",
+      "category": "course",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-20",
+      "done": false,
+      "createdAt": "2026-11-19T13:19:34.452Z"
     }
   ],
   "skipped": [],
