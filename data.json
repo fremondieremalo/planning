@@ -192,17 +192,6 @@
       "createdAt": "2026-11-12T06:54:29.944Z"
     },
     {
-      "id": "2026-11-17|etirements",
-      "planKey": "2026-11-17|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-17",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-17"
-    },
-    {
       "id": "84614b1a-de96-458e-9ca5-27e8482f2dc2",
       "title": "EF + 2x10' à 4'20",
       "category": "course",
@@ -254,7 +243,7 @@
     },
     {
       "id": "51e8d34f-7fd0-49a3-b00f-a97ff81610e2",
-      "title": "4x500m 3'56",
+      "title": "Fractionné Long",
       "category": "course",
       "importance": null,
       "description": "",
@@ -311,17 +300,6 @@
       "date": "2026-11-15",
       "done": false,
       "createdAt": "2026-11-13T15:45:11.612Z"
-    },
-    {
-      "id": "2026-11-18|etirements",
-      "planKey": "2026-11-18|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-18",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-18"
     },
     {
       "id": "2026-11-19|etirements",
@@ -528,6 +506,28 @@
       "date": "2026-11-22",
       "done": false,
       "createdAt": "2026-11-20T09:18:43.440Z"
+    },
+    {
+      "id": "2026-11-25|etirements",
+      "planKey": "2026-11-25|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-25",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-25"
+    },
+    {
+      "id": "2026-11-26|etirements",
+      "planKey": "2026-11-26|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-26",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-26"
     }
   ],
   "skipped": [],
