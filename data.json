@@ -302,17 +302,6 @@
       "createdAt": "2026-11-13T15:45:11.612Z"
     },
     {
-      "id": "2026-11-19|etirements",
-      "planKey": "2026-11-19|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-19",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-19"
-    },
-    {
       "id": "2026-11-20|etirements",
       "planKey": "2026-11-20|etirements",
       "title": "Étirements",
@@ -538,6 +527,27 @@
       "date": "2026-11-25",
       "done": false,
       "createdAt": "2026-11-22T07:59:55.865Z"
+    },
+    {
+      "id": "2026-11-27|etirements",
+      "planKey": "2026-11-27|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-27",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-27"
+    },
+    {
+      "id": "ce91ac62-faa8-4dd1-90ae-c68644869c8e",
+      "title": "Présentation TP1 et TP2",
+      "category": "ecole",
+      "importance": "faible",
+      "description": "",
+      "date": "2026-11-25",
+      "done": false,
+      "createdAt": "2026-11-23T06:38:38.209Z"
     }
   ],
   "skipped": [],
