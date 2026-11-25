@@ -628,6 +628,16 @@
       "date": "2026-11-28",
       "done": false,
       "createdAt": "2026-11-25T15:49:43.650Z"
+    },
+    {
+      "id": "13b43a6a-4201-4fb6-9b47-85fabd1fde1b",
+      "title": "QCM Traitement Image",
+      "category": "ecole",
+      "importance": "faible",
+      "description": "",
+      "date": "2026-12-01",
+      "done": false,
+      "createdAt": "2026-11-25T15:51:58.508Z"
     }
   ],
   "skipped": [],
