@@ -588,6 +588,16 @@
       "date": "2026-11-26",
       "done": false,
       "createdAt": "2026-11-25T14:48:54.925Z"
+    },
+    {
+      "id": "b783c91c-d84e-4bcf-b064-6d2261984c73",
+      "title": "Data Engineering",
+      "category": "ecole",
+      "importance": "faible",
+      "description": "",
+      "date": "2026-11-27",
+      "done": false,
+      "createdAt": "2026-11-25T14:49:36.944Z"
     }
   ],
   "skipped": [],
