@@ -308,7 +308,7 @@
       "importance": "faible",
       "description": "",
       "date": "2026-11-25",
-      "done": false,
+      "done": true,
       "createdAt": "2026-11-16T10:45:59.949Z"
     },
     {
@@ -503,7 +503,7 @@
       "importance": null,
       "description": "Développé couché\nBi-set : rowing + tirage bûcheron\nBi-set : développé militaire + élévations latérales\nBi-set : curl pupitre + curl brachial\nBi-set : dips + lever altéré",
       "date": "2026-11-25",
-      "done": false,
+      "done": true,
       "createdAt": "2026-11-22T07:59:55.865Z"
     },
     {
@@ -524,7 +524,7 @@
       "importance": "faible",
       "description": "",
       "date": "2026-11-25",
-      "done": false,
+      "done": true,
       "createdAt": "2026-11-23T06:38:38.209Z"
     },
     {
