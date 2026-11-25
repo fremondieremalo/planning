@@ -302,17 +302,6 @@
       "createdAt": "2026-11-13T15:45:11.612Z"
     },
     {
-      "id": "2026-11-20|etirements",
-      "planKey": "2026-11-20|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-20",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-20"
-    },
-    {
       "id": "bcb238da-b041-4281-b7df-3580a85e397b",
       "title": "Lire Ethic AI slides",
       "category": "ecole",
@@ -321,17 +310,6 @@
       "date": "2026-11-25",
       "done": false,
       "createdAt": "2026-11-16T10:45:59.949Z"
-    },
-    {
-      "id": "2026-11-21|etirements",
-      "planKey": "2026-11-21|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-21",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-21"
     },
     {
       "id": "a061cfa8-11ca-4c1c-9579-c37dd8249306",
@@ -548,6 +526,38 @@
       "date": "2026-11-25",
       "done": false,
       "createdAt": "2026-11-23T06:38:38.209Z"
+    },
+    {
+      "id": "2026-11-28|etirements",
+      "planKey": "2026-11-28|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-28",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-28"
+    },
+    {
+      "id": "2026-11-29|etirements",
+      "planKey": "2026-11-29|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-29",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-29"
+    },
+    {
+      "id": "17895f6e-1ae8-4f81-90c1-c4d6fc18844a",
+      "title": "Ethics & AI",
+      "category": "ecole",
+      "importance": "moyenne",
+      "description": "trouver matiere sur le sujet",
+      "date": "2026-12-07",
+      "done": false,
+      "createdAt": "2026-11-25T09:18:49.766Z"
     }
   ],
   "skipped": [],
