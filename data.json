@@ -322,28 +322,6 @@
       "createdAt": "2026-11-17T12:44:53.214Z"
     },
     {
-      "id": "2026-11-22|etirements",
-      "planKey": "2026-11-22|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-22",
-      "importance": null,
-      "done": true,
-      "createdAt": "2026-11-22"
-    },
-    {
-      "id": "2026-11-23|etirements",
-      "planKey": "2026-11-23|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-23",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-23"
-    },
-    {
       "id": "ca295cac-45b3-4b1a-8511-3ad5452055e1",
       "title": "50min",
       "category": "course",
@@ -638,6 +616,38 @@
       "date": "2026-12-01",
       "done": false,
       "createdAt": "2026-11-25T15:51:58.508Z"
+    },
+    {
+      "id": "2026-11-30|etirements",
+      "planKey": "2026-11-30|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-11-30",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-11-30"
+    },
+    {
+      "id": "2026-12-01|etirements",
+      "planKey": "2026-12-01|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-12-01",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-12-01"
+    },
+    {
+      "id": "2ab59125-60ca-450d-bda8-fa272ac67bb2",
+      "title": "Espagnol",
+      "category": "ecole",
+      "importance": "moyenne",
+      "description": "passé simple, passé composé, imparfait, présent, ser vs estar, conditionnel, futur",
+      "date": "2026-11-30",
+      "done": false,
+      "createdAt": "2026-11-27T07:44:06.987Z"
     }
   ],
   "skipped": [],
