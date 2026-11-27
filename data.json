@@ -668,6 +668,16 @@
       "date": "2026-11-27",
       "done": false,
       "createdAt": "2026-11-27T11:03:30.670Z"
+    },
+    {
+      "id": "af227173-28a6-4691-83b2-55ee3523ef1b",
+      "title": "Culture CNN",
+      "category": "autres",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-29",
+      "done": false,
+      "createdAt": "2026-11-27T13:03:33.288Z"
     }
   ],
   "skipped": [],
