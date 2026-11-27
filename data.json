@@ -588,16 +588,6 @@
       "createdAt": "2026-11-25T15:47:43.361Z"
     },
     {
-      "id": "4719a249-7957-4322-9933-a6a3285fc1ee",
-      "title": "Séance Upper",
-      "category": "muscu",
-      "importance": null,
-      "description": "Développé couché\nBi-set : rowing + tirage bûcheron\nBi-set : développé militaire + élévations latérales\nBi-set : curl pupitre + curl brachial\nBi-set : dips + lever altéré",
-      "date": "2026-11-27",
-      "done": false,
-      "createdAt": "2026-11-25T15:49:14.669Z"
-    },
-    {
       "id": "99622f63-4019-428b-86e0-134376c45533",
       "title": "EF Long",
       "category": "course",
