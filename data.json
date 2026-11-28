@@ -432,17 +432,6 @@
       "createdAt": "2026-11-19T14:36:04.898Z"
     },
     {
-      "id": "2026-11-24|etirements",
-      "planKey": "2026-11-24|etirements",
-      "title": "Étirements",
-      "category": "etirements",
-      "description": "",
-      "date": "2026-11-24",
-      "importance": null,
-      "done": false,
-      "createdAt": "2026-11-24"
-    },
-    {
       "id": "006d951a-8314-4e0a-92ee-8f2724b6c0df",
       "title": "Chaise, Penisson",
       "category": "autres",
@@ -678,6 +667,27 @@
       "date": "2026-11-29",
       "done": false,
       "createdAt": "2026-11-27T13:03:33.288Z"
+    },
+    {
+      "id": "2026-12-02|etirements",
+      "planKey": "2026-12-02|etirements",
+      "title": "Étirements",
+      "category": "etirements",
+      "description": "",
+      "date": "2026-12-02",
+      "importance": null,
+      "done": false,
+      "createdAt": "2026-12-02"
+    },
+    {
+      "id": "4c7dafb5-5b7a-4043-bbfb-55c74bf4610d",
+      "title": "Enlever ChatGPT Plus",
+      "category": "autres",
+      "importance": null,
+      "description": "",
+      "date": "2026-12-25",
+      "done": false,
+      "createdAt": "2026-11-28T07:51:15.027Z"
     }
   ],
   "skipped": [],
