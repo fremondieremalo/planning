@@ -688,6 +688,16 @@
       "date": "2026-12-25",
       "done": false,
       "createdAt": "2026-11-28T07:51:15.027Z"
+    },
+    {
+      "id": "fda5ea46-2977-4293-8e7d-61f3635d425e",
+      "title": "Cookie",
+      "category": "autres",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-28",
+      "done": false,
+      "createdAt": "2026-11-28T07:54:31.796Z"
     }
   ],
   "skipped": [],
