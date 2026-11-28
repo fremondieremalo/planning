@@ -698,6 +698,16 @@
       "date": "2026-11-28",
       "done": false,
       "createdAt": "2026-11-28T07:54:31.796Z"
+    },
+    {
+      "id": "c854c300-ad22-486d-adb6-44f53e0961ad",
+      "title": "Ménage",
+      "category": "autres",
+      "importance": null,
+      "description": "",
+      "date": "2026-11-28",
+      "done": false,
+      "createdAt": "2026-11-28T07:54:39.553Z"
     }
   ],
   "skipped": [],
